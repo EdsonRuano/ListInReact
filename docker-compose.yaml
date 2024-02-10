@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    container_name: "react-list"
+    build: 
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=https://jsonplaceholder.typicode.com/posts
