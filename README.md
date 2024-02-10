@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# React List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code for a React application that displays a list of items obtained from the `https://jsonplaceholder.typicode.com/posts` API.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+To run this project, you'll need to have Docker installed on your system.
 
-### `npm start`
+- [Docker](https://www.docker.com/get-started)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation and Running
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Follow these steps to build and run the application in your local environment:
 
-### `npm test`
+1. Clone this repository to your local machine using the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```
+    git clone https://github.com/EdsonRuano/ListInReact.git
+    ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```
+    cd ListInReact
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Run the following command to build and run the application in a Docker container:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```
+    docker-compose up --build
+    ```
 
-### `npm run eject`
+    This will build the container image and then start the "app" service. The application will be available at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The URL of the API that the application connects to is defined in the `REACT_APP_API_URL` environment variable. You can modify this variable in the `docker-compose.yml` file as needed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribution
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If you'd like to contribute to this project, follow these steps:
 
-## Learn More
+1. Fork the repository and clone it to your local machine.
+2. Create a new branch for your feature (`git checkout -b feature/new-feature`).
+3. Make your changes and ensure the tests pass.
+4. Commit your changes (`git commit -am 'Add a new feature'`).
+5. Push your branch to GitHub (`git push origin feature/new-feature`).
+6. Create a new Pull Request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Specify the license that applies to your code, for example: MIT License, Apache License 2.0, etc.]
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For any questions or suggestions, feel free to contact [Edson Ruano](https://github.com/EdsonRuano).
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
